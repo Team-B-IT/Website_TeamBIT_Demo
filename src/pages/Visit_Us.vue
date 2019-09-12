@@ -1,27 +1,28 @@
 <template>
   <div>
     <app-banner v-bind:title="title" v-bind:nd="nd"></app-banner>
-    <app-about-content></app-about-content>
+    <app-visit></app-visit>
   </div>
 </template>
 
 <script>
 
 import BannerHome from '../components/layout/Banner.vue';
-import AboutContent from '../components/About_Content';
+import Visit from '../components/Visit.vue';
 export default {
   components: {
     appBanner: BannerHome,
-    appAboutContent: AboutContent,
+    appVisit: Visit,
   },
   data: function() {
     return {
-      title: 'About',
-      nd: "Team B'IT",
+      title: 'Visit Us',
+      nd: 'Address: HaNoi, Viet Nam',
     }
   }
 }
 </script>
 
 <style scoped>
+
 </style>

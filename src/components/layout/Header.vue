@@ -1,18 +1,15 @@
 <template>
     <div class="content-header">
-        <!-- <div class="progress">
-        <div class="progress-bar bg-success" style="width:70%"></div>
-        </div> -->
         <header class="header-area"> 
             <div class="header-wrap">
                 <div class="header-top d-flex justify-content-between align-items-lg-center navbar-expand-lg">
-                    <div class="col-4 text-lg-center mt-2 mt-lg-0">
+                    <div class="col-5 text-lg-center mt-2 mt-lg-0">
                     <span class="logo-outer">
                         <span class="logo-inner">
                         <router-link
                             tag ="a"
                             to="/"
-                        ><img class="mx-auto"  alt="" src="@/assets/logoBIT.png" width="150px" 
+                        ><img class="mx-auto"  alt="" src="@/assets/img/logo.png" width="200px" 
                         /></router-link>
                         </span>
                     </span>
@@ -39,22 +36,22 @@
                                 <router-link
                                     tag="a"
                                     class="nav-link"
-                                    to="/member"
+                                    to="/blog"
                                 >Blog</router-link>
                             </li>
                             <li class="nav-item">
                                  <router-link
                                     tag="a"
                                     class="nav-link"
-                                    to="/member"
+                                    to="/services"
                                 >Services</router-link>
                             </li>
                             <li class="nav-item">
                                 <router-link
                                     tag="a"
                                     class="nav-link"
-                                    to="/member"
-                                >Achiments</router-link>
+                                    to="/achiment"
+                                >Achievements</router-link>
                             </li>
                             
                             <li class="nav-item dropdown">
@@ -81,8 +78,8 @@
                                     <router-link
                                         tag="a"
                                         class="dropdown-item"
-                                        to="/about"
-                                    >Contact Us</router-link>
+                                        to="/visit"
+                                    >Visit Us</router-link>
                                 </div>
                             </li>
                             </ul>
@@ -102,10 +99,17 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    .header-area {
-         background-color:  rgb(72, 206, 72);
+    .menu-right .nav-item .nav-link {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        font-weight: bolder;
+        font-style: initial;
     }
-    .dropdown-menu {
-         background-color: rgb(83, 245, 83);
+    .dropdown-item {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        font-weight: bolder;
+        font-style: initial;
     }
+    
 </style>

@@ -1,11 +1,13 @@
 <template>
     <div class="container">
         <section>
-         <div class="card" style="width:250px">
-            <img class="card-img-top" src="@/assets/img/instagram/i1.jpg" alt="Card Image" style="width:75%">
+         <div class="card" style="width:300px">
+            <!-- <img class="card-img-top" src="" alt="Card Image" style="width:75%"> -->
             <div class="card-body">
-            <h4 class="card-title">{{name}}</h4>
+            <h5 class="card-title">{{name}}</h5>
             <p class="card-text">{{position}}</p>
+            <br>
+            <p class="card-text">Major: {{major}}</p>
             <a href="#" class="btn btn-primary">See Profile</a>
             </div>
         </div>
@@ -19,9 +21,13 @@
              name: String,
              position: {
                  type: String,
-                 default: 'Co-founder team BIT',
+                 default: "Co-founder team B'IT",
              },
              img: String,
+             major: {
+                 type: String,
+                 default: 'Computer Science'
+             },
          }   
     }
 </script>
@@ -32,5 +38,10 @@
      margin: 10px;
      padding: 10px;
      background-color: darkgrey;
+}
+.card-text {
+    font-style: initial;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 </style>

@@ -1,36 +1,29 @@
 <template>
   <div class="contenter">
-    <app-banner-home></app-banner-home>
-    <br/>
+    <app-banner></app-banner>
+    <br>
     <section>
-      <h3  style="text-align: center">Halo!</h3>
-      <div class="alert alert-info" role="alert">
-        Welcome to team BIT!
+      <div class="alert alert-info" role="alert" style="text-align: center">
+       <h2> Welcome to team B'IT! </h2>
       </div>
     </section>  
   </div>
 </template>
-
 <script>
 
-
-import BannerHome from '../components/layout/BannerHome.vue';
+import Banner from '../components/layout/BannerHome.vue';
 
 export default {
   components: {
-    appBannerHome: BannerHome,
+    appBanner: Banner,
   },
   data: function() {
     return {
-      title: '',
+      title: "Team B'IT"
     }
   }
 }
 </script>
 
 <style scoped>
-  #app {
-    padding: 0px;
-    margin: 0px;
-  }
 </style>

@@ -118,7 +118,7 @@ $(document).ready(function() {
     });
 
   var unavailableDates = [
-    { start: "2015-08-31", end: "2015-09-05" },
+    { start: "2019-08-31", end: "2019-09-05" },
     { start: "2015-09-11", end: "2015-09-15" },
     { start: "2015-09-15", end: "2015-09-23" },
     { start: "2015-10-01", end: "2015-10-07" }
@@ -225,7 +225,7 @@ $(document).ready(function() {
 
       // Let's also add a marker while we're at it
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.67, -73.94),
+        position: new google.maps.LatLng(0, 0),
         map: map,
         title: "Snazzy!"
       });

@@ -14,16 +14,15 @@
     //Props dung de truyen du lieu tu component cah sang com con truyen thong bao den cac com cha 
     //thong qua cac su kien
     export default {
-            // props: ['title','nd'],
             props: {
                 title: {
                     type: Object,
                     required: true,
-                    default: 'Team BIT',
+                    default: "Team B'IT",
                 },
                 nd: {
                     type: String,
-                    required: true,
+                    required: false,
                 }
             }
     }
@@ -32,6 +31,6 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #nd {
-    color: black;
+    color: white;
 }
 </style>
