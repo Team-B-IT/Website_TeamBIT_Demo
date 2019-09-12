@@ -1,21 +1,19 @@
 <template>
     <div class="content-header">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
         <header class="header-area"> 
             <div class="header-wrap">
-                <div class="header-top d-flex justify-content-between align-items-lg-center navbar-expand-lg">
-                    <div class="col-5 text-lg-center mt-2 mt-lg-0">
-                    <span class="logo-outer">
-                        <span class="logo-inner">
+                
+                <div class="header-top d-flex justify-content-between align-items-lg-end">
+                    <div class="col-5 text-lg-center mt-2 mt-sm-0" >
                         <router-link
                             tag ="a"
                             to="/"
-                        ><img class="mx-auto"  alt="" src="@/assets/img/logo.png" width="200px" 
-                        /></router-link>
-                        </span>
-                    </span>
+                        >
+                            <img class="mx-auto"  alt="" src="@/assets/img/logo.png" width="200px"/>
+                        </router-link>
                     </div>
-
-                     <nav class="col navbar navbar-expand-lg justify-content-end">
+                    <nav class="col navbar navbar-expand-sm justify-content-end">
                         <!-- Toggler/collapsibe Button -->
                         <button
                             class="navbar-toggler"
@@ -33,83 +31,103 @@
                         >
                             <ul class="navbar-nav justify-content-center w-100">
                                 <li class="nav-item">
-                                <router-link
-                                    tag="a"
-                                    class="nav-link"
-                                    to="/blog"
-                                >Blog</router-link>
-                            </li>
-                            <li class="nav-item">
-                                 <router-link
-                                    tag="a"
-                                    class="nav-link"
-                                    to="/services"
-                                >Services</router-link>
-                            </li>
-                            <li class="nav-item">
-                                <router-link
-                                    tag="a"
-                                    class="nav-link"
-                                    to="/achiment"
-                                >Achievements</router-link>
-                            </li>
-                            
-                            <li class="nav-item dropdown">
-                                <router-link
-                                    tag="a"
-                                    class="nav-link dropdown-toggle"
-                                    id="navbardrop"
-                                    data-toggle="dropdown"
-                                    to="/about"
-                                >About Us </router-link>
-                                <div class="dropdown-menu">
                                     <router-link
                                         tag="a"
-                                        class="dropdown-item"
+                                        class="nav-link"
+                                        to="/"
+                                    >Home</router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <router-link
+                                        tag="a"
+                                        class="nav-link"
+                                        to="/blog"
+                                    >Blog</router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <router-link
+                                        tag="a"
+                                        class="nav-link"
+                                        to="/products"
+                                    >Products</router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <router-link
+                                        tag="a"
+                                        class="nav-link"
+                                        to="/achievements"
+                                    >Achievements</router-link>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <router-link
+                                        tag="a"
+                                        class="nav-link dropdown-toggle"
+                                        id="navbardrop"
+                                        data-toggle="dropdown"
                                         to="/about"
-                                    >Team BI'T</router-link>
-                                    <div class="dropdown-divider"></div>
-                                    <router-link
-                                        tag="a"
-                                        class="dropdown-item"
-                                        to="/member"
-                                    >Members</router-link>
-                                    <div class="dropdown-divider"></div>
-                                    <router-link
-                                        tag="a"
-                                        class="dropdown-item"
-                                        to="/visit"
-                                    >Visit Us</router-link>
-                                </div>
-                            </li>
+                                    >About Us </router-link>
+                                    <div class="dropdown-menu">
+                                        <router-link
+                                            tag="a"
+                                            class="dropdown-item"
+                                            to="/about"
+                                        >Team BI'T</router-link>
+                                        <div class="dropdown-divider"></div>
+                                        <router-link
+                                            tag="a"
+                                            class="dropdown-item"
+                                            to="/member"
+                                        >Members</router-link>
+                                        <div class="dropdown-divider"></div>
+                                        <router-link
+                                            tag="a"
+                                            class="dropdown-item"
+                                            to="/visit"
+                                        >Visit Us</router-link>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </nav>
-                    
-                    </div> 
+                </div> 
             </div>
-             
         </header>
     </div>
 </template>
 
 <script>
- 
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .menu-right .nav-item .nav-link {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: large;
-        font-weight: bolder;
-        font-style: initial;
-    }
-    .dropdown-item {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Lato', sans-serif;
         font-size: large;
         font-weight: bolder;
         font-style: initial;
     }
     
+    .menu-right:hover .nav-item:hover .nav-link:hover{
+        color: #f0f0f0;
+        background-image: linear-gradient(to top, #5f3162 40%, #ffffff);  
+    }
+
+    .dropdown:hover {
+        background-image: linear-gradient(to top, #5f3162 40%, #ffffff);
+    }
+
+    .dropdown-menu:hover .dropdown-item:hover {
+        color: #f0f0f0;
+        background-color: #5f3162;
+    }
+
+    .nav-item .nav-link {
+        margin:  0px;
+        padding: 15px 30px 13px 30px;
+    }
+
+    .header-area {
+        background-color: #f8fee9;
+    }
 </style>
