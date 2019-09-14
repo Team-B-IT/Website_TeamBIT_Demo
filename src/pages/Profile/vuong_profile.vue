@@ -2,7 +2,7 @@
   <div>
     <app-banner v-bind:title="title" v-bind:nd="content"></app-banner>
     <app-profile>
-      <img class="avatar" alt="" src="@/assets/img/instagram/teambit3.jpg">
+      <img class="avatar" alt="" src="@/assets/img/instagram/vuong.jpg">
     </app-profile>
   </div>
 </template>

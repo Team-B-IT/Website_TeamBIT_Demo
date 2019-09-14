@@ -16,9 +16,9 @@ export const routes =  [
   { path: '/visit', name: 'visitpage', component: Visit },
   { path: '/blog', name: 'blogpage', component: Blog },
   { path: '/products', name: 'productspage', component: Products },
-  { path: '/achievements', name: 'achimentpage', component: Achiment },
-  { path: '/vuongProfile', name: 'profilepage', component: VuongProfile },
-  { path: '/hieuProfile', name: 'profilepage', component: HieuProfile },
+  { path: '/achievements', name: 'achimentspage', component: Achiment },
+  { path: '/vuongProfile', name: 'profile1epage', component: VuongProfile },
+  { path: '/hieuProfile', name: 'profile2page', component: HieuProfile },
   { path: '*', name: 'not found', component: NF}
 ]
   

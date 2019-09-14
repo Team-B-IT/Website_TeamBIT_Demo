@@ -189,10 +189,10 @@
 
                    <br>
                    <ul class="progressbar">
-                     <li class="1">Suck</li>
-                     <li class="2">Know little</li>
-                     <li class="3">Good</li>
-                     <li class="4">Master</li>
+                     <li class="1">Know Little</li>
+                     <li class="2">Good</li>
+                     <li class="3">Master</li>
+                     <li class="4">God</li>
                    </ul>
                 </ul>
             </div>
@@ -349,6 +349,7 @@
   width: 350px;
   height: 350px;
   border-radius: 50%;
+  /* text-align: center; */
  }
  hr { 
   display: block;
