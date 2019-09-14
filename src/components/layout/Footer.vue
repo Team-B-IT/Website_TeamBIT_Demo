@@ -49,11 +49,14 @@
           </div>
            <div class="col-lg-3  col-md-6 col-sm-6">
             <div class="single-footer-widget mail-chimp">
-              <h6 class="mb-20">Instragram Feed</h6>
+              <h6 class="mb-10">Photos</h6>
               <ul class="instafeed d-flex flex-wrap">
-                <li><img src="@/assets/img/instagram/i1.jpg" alt="Instragram" /></li>
-                <li><img src="@/assets/img/instagram/i2.jpg" alt="Instragram" /></li>
-                <li><img src="@/assets/img/instagram/i3.jpg" alt="Instragram" /></li>
+                <li><img src="@/assets/img/instagram/teambit1.jpg" alt="FaceBook"   height="60px"/></li>
+                <!-- <li><img src="@/assets/img/instagram/teambit2.jpg" alt="FaceBook"   height="70px"/></li> -->
+                <li><img src="@/assets/img/instagram/teambit3.jpg" alt="FaceBook"   height="70px"/></li>
+                <!-- <li><img src="@/assets/img/instagram/teambit4.jpg" alt="FaceBook"   height="70px"/></li> -->
+                <li><img src="@/assets/img/instagram/teambit5.jpg" alt="FaceBook"   height="70px"/></li>
+                <!-- <li><img src="@/assets/img/instagram/teambit6.png" alt="FaceBook"   height="70px"/></li> -->
               </ul>
             </div>
           </div>

@@ -1,53 +1,84 @@
 <template>
   <div class="content">
-    <app-banner v-bind:title="title" v-bind:nd="nd"></app-banner>
-    <div class="row row1">
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="vuong" v-bind:position="vuong_pos" ></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="hieu" v-bind:position="hieu_pos"></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="cuong_b" v-bind:major="cnpm"></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="an_b" v-bind:major="ktmt"></app-member-card>
-       </div>
-    </div>
-    <div class="row row2">
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="cuong_n" v-bind:major="ktmt" ></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="duy_nc" v-bind:major="ktmt"></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="hoang_ph" v-bind:major="ktmt" v-bind:position="hoang_pos" ></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="kien_pt" ></app-member-card>
-       </div>
-    </div>
-    <div class="row row3">
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="quang" v-bind:major="httt" ></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="vu_dt" v-bind:major="httt"></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="vinh" v-bind:major="ktmt"></app-member-card>
-       </div>
-       <div class="col-xs-6 col-sm-3" > 
-        <app-member-card v-bind:name="lien" v-bind:position="lien_pos" v-bind:major="lien_major"></app-member-card>
-       </div>
+    <app-banner v-bind:title="title" ></app-banner>
+    <br>
+    <h3 style="text-align: center">OUR TEAM</h3>
+    <hr>
+    <div class="row pt-md">
+      <div class="row row1">
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card 
+            v-bind:name="vuong.name" 
+            v-bind:position="vuong.pos" 
+            v-bind:major="vuong.major">
+            <a v-bind:href="vuong.href" class="btn btn-primary" >See Profile</a>
+            </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="hieu.name" v-bind:position="hieu.pos" v-bind:major="hieu.major">
+            <a v-bind:href="hieu.href" class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="an.name" v-bind:major="an.major">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="cuong_b.name" v-bind:major="cuong_b.major">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+      </div>
+      <div class="row row2">
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="cuong_n.name" v-bind:major="cuong_n.major" >
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="duy.name" v-bind:major="duy.major">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="hoang.name" v-bind:major="hoang.major" v-bind:position="hoang.pos" >
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="kien.name" v-bind:major="kien.major" v-bind:position="kien.pos">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+      </div>
+      <div class="row row3">
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="quang.name" v-bind:major="quang.major" >
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="lien.name" v-bind:major="lien.major" v-bind:position="lien.pos">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="vinh.name" v-bind:major="vinh.major">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+        <div class="col-xs-6 col-sm-3" > 
+          <app-member-card v-bind:name="vu.name" v-bind:major="vu.major">
+            <a class="btn btn-primary" >See Profile</a>
+          </app-member-card>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-
 
 import BannerHome from '../components/layout/Banner.vue';
 import MemberCard from '../components/Member_card.vue';
@@ -58,41 +89,79 @@ export default {
   },
   data: function() {
     return {
-      title: 'Member',
-      nd: "Team B'IT",
-      vuong: "Dang Xuan Vuong",
-      vuong_pos: "Leader",
-      vuong_major: "Computer Science and Computer engineering",
-      hieu: "Nguyen Trung Hieu",
-      hieu_pos: "Sub Leader",
-      cuong_b: "Bui Phan Thanh Cuong",
-      cuong_n: "Nguyen Manh Cuong",
-      an_b: "Bui Ngoc An",
-      duy_nc: "Nguyen Cao Duy",
-      hoang_ph: "Phan Huy Hoang",
-      hoang_pos: "Tau Hai",
-      kien_pt: "Phan Trung Kien",
-      lien: "Pham Thi Phuong Lien",
-      lien_pos: "Designer + Co-founder",
-      quang: "Vu Tien Quang",
-      vinh: "Ton Thien Vinh",
-      vu_dt: "Dang Tri Vu",
-      lien_major: "",
-      ktmt: "Computer engineering",
-      httt: "Information system",
-      cnpm: "Software technology"
+      title: "Member",
+      vuong: {
+        name: "Dang Xuan Vuong",
+        pos: "Leader",
+        major: "Computer Science",
+        href: '/vuongProfile'
+      },
+      hieu: {
+        name: "Nguyen Trung Hieu",
+        pos: "Sub-Leader",
+        major: "Computer Science ",
+        href: '/hieuProfile'
+      },
+      an: {
+        name: "Bui Ngoc An",
+        pos: "Co-Founder",
+        major: "Computer Engineering"
+      },
+      cuong_b: {
+        name: "Bui Phan Thanh Cuong",
+        pos: "Co-Founder",
+        major: "Software Technology"
+      },
+      cuong_n: {
+        name: "Nguyen Manh Cuong",
+        pos: "Co-Founder",
+        major: "Computer Engineering"
+      },
+      duy: {
+        name: "Nguyen Cao Duy",
+        pos: "Co-Founder",
+        major: "Computer Engineering"
+      },
+      hoang: {
+        name: "Phan Huy Hoang",
+        pos: "Tau Hai",
+        major: "Computer Engineering"
+      },
+      kien: {
+        name: "Phan Trung Kien",
+        pos: "Co-Founder",
+        major: "Computer Science"
+      },
+      lien: {
+        name: "Pham Thi Phuong Lien",
+        pos: "Co-Founder + Designer",
+        major: "..."
+      },
+      quang: {
+        name: "Vu Tien Quang",
+        pos: "Co-Founder",
+        major: "Information System"
+      },
+      vinh: {
+        name: "Ton Thien Vinh",
+        pos: "Co-Founder",
+        major: "Computer Engineering"
+      },
+      vu: {
+        name: "Dang Tri Vu",
+        pos: "Co-Founder",
+        major: "Information System"
+      },
     }
   }
 }
 </script>
 
 <style scoped>
-  #app {
-    padding: 0px;
-    margin: 0px;
-  }
   .row {
       max-width: 100%;
   }
-  
+  .container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 </style>

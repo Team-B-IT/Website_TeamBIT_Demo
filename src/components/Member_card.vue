@@ -1,14 +1,19 @@
 <template>
     <div class="container">
         <section>
-         <div class="card" style="width:300px">
-            <!-- <img class="card-img-top" src="" alt="Card Image" style="width:75%"> -->
+         <div class="card" style="width:300px" >
             <div class="card-body">
             <h5 class="card-title">{{name}}</h5>
             <p class="card-text">{{position}}</p>
-            <br>
             <p class="card-text">Major: {{major}}</p>
-            <a href="#" class="btn btn-primary">See Profile</a>
+            <!-- <a v-bind:href= "href" class="btn btn-primary" >See Profile</a> -->
+            <slot></slot>
+            <!-- <router-link
+                tag="a"
+                class="btn btn-primary"
+                to = "#"
+                @click="showProfile"
+            >See Profile</router-link> -->
             </div>
         </div>
         </section>
@@ -18,17 +23,20 @@
 <script>
     export default {         
          props: {
+             id: Number,
              name: String,
              position: {
                  type: String,
                  default: "Co-founder team B'IT",
              },
-             img: String,
              major: {
-                 type: String,
-                 default: 'Computer Science'
+                 type: String
              },
-         }   
+             href: {
+                 type: String,
+                 default: '/error'
+             }
+         }
     }
 </script>
 
@@ -37,7 +45,10 @@
  .card {
      margin: 10px;
      padding: 10px;
-     background-color: darkgrey;
+     background-color: rgb(160, 148, 148);
+}
+.card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .card-text {
     font-style: initial;

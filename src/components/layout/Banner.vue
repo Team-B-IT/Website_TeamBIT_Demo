@@ -1,13 +1,13 @@
 <template>
-    <div class="content-banner">
+  <div class="content-banner">
     <section class="banner-area relative">
-    	<div class="overlay overlay-bg"></div>
-    		<div class="banner-content text-center">
-        		<h1>{{ title }}</h1>
-        		<h3 id="nd">{{ nd }}</h3>
-    		</div>
+      <div class="overlay overlay-bg"></div>
+        <div class="banner-content text-center">
+          <h1>{{ title }}</h1>
+          <h3 class="nd">{{ nd }}</h3>
+        </div>
     </section>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -16,13 +16,11 @@
     export default {
             props: {
                 title: {
-                    type: Object,
-                    required: true,
-                    default: "Team B'IT",
+                    type: String
                 },
                 nd: {
                     type: String,
-                    required: false,
+                    default: "Team B'IT"
                 }
             }
     }
@@ -30,7 +28,11 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#nd {
-    color: white;
-}
+    .h3 {
+        color: aliceblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .nd {
+        color: white;
+    }
 </style>
