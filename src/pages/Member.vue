@@ -11,7 +11,12 @@
             v-bind:name="vuong.name" 
             v-bind:position="vuong.pos" 
             v-bind:major="vuong.major">
-            <a v-bind:href="vuong.href" class="btn btn-primary" >See Profile</a>
+            <!-- <a v-bind:href="vuong.href" class="btn btn-primary" >See Profile</a> -->
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/vuongProfile"
+            >See Profile</router-link>
             </app-member-card>
         </div>
         <div class="col-xs-6 col-sm-3" > 

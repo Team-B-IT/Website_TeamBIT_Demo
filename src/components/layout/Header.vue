@@ -5,12 +5,12 @@
             <div class="header-wrap">
                 
                 <div class="header-top d-flex justify-content-between align-items-lg-end">
-                    <div class="col-5 text-lg-center mt-2 mt-sm-0" >
+                    <div class="col-4 text-lg-center mt-2 mt-sm-0" >
                         <router-link
                             tag ="a"
                             to="/"
                         >
-                            <img class="mx-auto"  alt="" src="@/assets/img/logo.png" width="200px"/>
+                            <img class="mx-auto"  alt="" src="@/assets/img/logo.png" width="180px"/>
                         </router-link>
                     </div>
                     <nav class="col navbar navbar-expand-sm justify-content-end">
@@ -110,16 +110,16 @@
     
     .menu-right:hover .nav-item:hover .nav-link:hover{
         color: #f0f0f0;
-        background-image: linear-gradient(to top, #5f3162 40%, #ffffff);  
+        background-image: linear-gradient(to top, #8a4bd3 40%, #ffffff);  
     }
 
     .dropdown:hover {
-        background-image: linear-gradient(to top, #5f3162 40%, #ffffff);
+        background-image: linear-gradient(to top, #8a4bd3 40%, #ffffff);
     }
 
     .dropdown-menu:hover .dropdown-item:hover {
         color: #f0f0f0;
-        background-color: #5f3162;
+        background-color: #8a4bd3;
     }
 
     .nav-item .nav-link {
@@ -127,7 +127,7 @@
         padding: 15px 30px 13px 30px;
     }
 
-    .header-area {
+    /* .header-area {
         background-color: #f8fee9;
-    }
+    } */
 </style>
