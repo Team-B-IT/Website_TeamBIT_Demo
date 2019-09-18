@@ -210,16 +210,16 @@
                         <tr>
                         <td>2018</td>
                         <td>
-                          <ul>
-                            <li> + SoICT's Creative Software Competition - Runner-up (Object Detection Application for The Blind)</li>
-                            <li> + Participated in The 2018 ICPC Asia Hanoi Regional Contest</li>
-                            <li> + HUST's Youth Creative Competition:
-                              <ul>
-                                <li> ++ Object Detection System for The Blind BKSeeing - Top 10</li>
-                                <li> ++ Intelligent Transport System BKITS - Top 20</li>
-                              </ul>
+                          <ol>
+                            <li class="award">SoICT's Creative Software Competition - Runner-up (Object Detection Application for The Blind)</li>
+                            <li class="award">Participated in The 2018 ICPC Asia Hanoi Regional Contest</li>
+                            <li class="award">HUST's Youth Creative Competition:
+                              <ol >
+                                <li class="awards">Object Detection System for The Blind BKSeeing - Top 10</li>
+                                <li class="awards">Intelligent Transport System BKITS - Top 20</li>
+                              </ol>
                             </li>
-                          </ul>
+                          </ol>
                         </td>
                         </tr>
                         <tr>
@@ -314,6 +314,12 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .awards {
+    padding-left: 30px;
+  }
+  .award {
+    padding-bottom: 5px;
+  }
   .progressbar {
     counter-reset: step;
   }

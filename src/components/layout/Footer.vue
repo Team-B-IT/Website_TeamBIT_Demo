@@ -78,7 +78,7 @@
           <p class="footer-text m-0"> 
           Email: Teambit2019@gmail.com || Phone: +84 392 211 7151
           <br>
-           &copy; 2019 Team B'IT <i class="fa fa-heart-o" aria-hidden="true"></i> Inc. All rights reserved. </p>
+          <span id="coppytext">&copy; 2019 Team B'IT <i class="fa fa-heart-o" aria-hidden="true"></i> Inc. All rights reserved.</span></p>
         </div>
       </div>
     </footer>
@@ -93,6 +93,8 @@
 <style scoped>
  .footer-area {
    background-color: black;
+   padding-top: 50px;
+   padding-bottom: 30px;
  }
  .container {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -100,5 +102,10 @@
  }
  .flex-wrap {
    font-style:unset;
+ }
+
+ #coppytext {
+   text-align: center;
+   
  }
 </style>
