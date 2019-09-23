@@ -4,7 +4,7 @@
     <br>
     <section>
       <div class="alert alert-info" role="alert" style="text-align: center">
-       <h2> Welcome to team B'IT! </h2>
+       <h2> Welcome to team B'IT! Alo</h2>
       </div>
     </section>  
   </div>
