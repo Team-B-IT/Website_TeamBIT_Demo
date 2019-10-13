@@ -6,14 +6,7 @@
             <h5 class="card-title">{{name}}</h5>
             <p class="card-text">{{position}}</p>
             <p class="card-text">Major: {{major}}</p>
-            <!-- <a v-bind:href= "href" class="btn btn-primary" >See Profile</a> -->
             <slot></slot>
-            <!-- <router-link
-                tag="a"
-                class="btn btn-primary"
-                to = "#"
-                @click="showProfile"
-            >See Profile</router-link> -->
             </div>
         </div>
         </section>
@@ -23,7 +16,6 @@
 <script>
     export default {         
          props: {
-             id: Number,
              name: String,
              position: {
                  type: String,

@@ -2,7 +2,7 @@
   <div>
     <app-banner v-bind:title="title" v-bind:nd="content"></app-banner>
     <Profile :profile="profile" >
-      <img class="avatar" alt="" src="@/assets/img/instagram/vuong.jpg">
+      <img class="avatar" alt="" src="@/assets/img/instagram/cuongbpt.jpg">
     </Profile>
   </div>
 </template>
@@ -20,10 +20,10 @@ export default {
   data: function() {
     return {
       title: 'Profile',
-      content: 'Dang Xuan Vuong',
+      content: 'Bui Phan Thanh Cuong',
       profile: {
-        name: "Dang Xuan Vuong",
-        major: "Computer Sicence",
+        name: "Bui Phan Thanh Cuong",
+        major: "Software Technology",
         phone: "+84 xxx xxxx",
         email: "@gmail.com",
         gitHub: "...",
@@ -39,4 +39,4 @@ export default {
 </script>
 
 <style scoped>
-</style>
+</style

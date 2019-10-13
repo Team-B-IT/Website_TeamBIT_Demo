@@ -7,76 +7,115 @@
     <div class="row pt-md">
       <div class="row row1">
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card 
+          <MemberCard 
             v-bind:name="vuong.name" 
             v-bind:position="vuong.pos" 
             v-bind:major="vuong.major">
-            <!-- <a v-bind:href="vuong.href" class="btn btn-primary" >See Profile</a> -->
             <router-link
               tag="a"
               class="btn btn-primary"
               to="/vuongProfile"
             >See Profile</router-link>
-            </app-member-card>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="hieu.name" v-bind:position="hieu.pos" v-bind:major="hieu.major">
-            <a v-bind:href="hieu.href" class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="hieu.name" v-bind:position="hieu.pos" v-bind:major="hieu.major">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/hieuProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="an.name" v-bind:major="an.major">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="an.name" v-bind:major="an.major">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/anProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="cuong_b.name" v-bind:major="cuong_b.major">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="cuong_b.name" v-bind:major="cuong_b.major">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/cuongbptProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
       </div>
       <div class="row row2">
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="cuong_n.name" v-bind:major="cuong_n.major" >
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="cuong_n.name" v-bind:major="cuong_n.major" >
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/cuongnmProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="duy.name" v-bind:major="duy.major">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="duy.name" v-bind:major="duy.major">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/duyProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="hoang.name" v-bind:major="hoang.major" v-bind:position="hoang.pos" >
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="hoang.name" v-bind:major="hoang.major" v-bind:position="hoang.pos" >
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/hoangProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="kien.name" v-bind:major="kien.major" v-bind:position="kien.pos">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="kien.name" v-bind:major="kien.major" v-bind:position="kien.pos">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/kienProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
       </div>
       <div class="row row3">
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="quang.name" v-bind:major="quang.major" >
+          <MemberCard v-bind:name="quang.name" v-bind:major="quang.major" >
             <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="lien.name" v-bind:major="lien.major" v-bind:position="lien.pos">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="lien.name" v-bind:major="lien.major" v-bind:position="lien.pos">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/lienProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="vinh.name" v-bind:major="vinh.major">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="vinh.name" v-bind:major="vinh.major">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/vinhProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
         <div class="col-xs-6 col-sm-3" > 
-          <app-member-card v-bind:name="vu.name" v-bind:major="vu.major">
-            <a class="btn btn-primary" >See Profile</a>
-          </app-member-card>
+          <MemberCard v-bind:name="vu.name" v-bind:major="vu.major">
+            <router-link
+              tag="a"
+              class="btn btn-primary"
+              to="/vuProfile"
+            >See Profile</router-link>
+          </MemberCard>
         </div>
       </div>
     </div>
@@ -90,7 +129,7 @@ import MemberCard from '../components/Member_card.vue';
 export default {
   components: {
     appBanner: BannerHome,
-    appMemberCard: MemberCard,
+    MemberCard,
   },
   data: function() {
     return {

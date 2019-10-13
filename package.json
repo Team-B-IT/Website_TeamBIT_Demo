@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "express": "^4.17.1",
+    "host": "0.0.1",
     "jquery": "^3.4.1",
     "page": "^1.11.4",
     "vue": "^2.6.10",

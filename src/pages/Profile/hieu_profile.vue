@@ -1,22 +1,38 @@
 <template>
   <div>
-    <app-banner v-bind:title="title" v-bind:nd="nd"></app-banner>
-    <h1>Hieu oc</h1>
+  <app-banner v-bind:title="title" v-bind:nd="content"></app-banner>
+    <Profile :profile="profile" >
+      <img class="avatar" alt="" src="@/assets/img/instagram/hieu.jpg">
+    </Profile>
   </div>
 </template>
 
 <script>
 
 import BannerHome from '../../components/layout/Banner.vue';
+import Profile from '../../components/Profile.vue'
 
 export default {
   components: {
     appBanner: BannerHome,
+    Profile
   },
   data: function() {
     return {
       title: 'Profile',
-      nd: 'Nguyen Trung Hieu',
+      content: 'Nguyen Trung Hieu',
+      profile: {
+        name: "Nguyen Trung Hieu",
+        major: "Computer Sicence",
+        phone: "+84 xxx xxxx",
+        email: "@gmail.com",
+        gitHub: "...",
+        codeforces: "...",
+        age: 21,
+        gender: "YAG",
+        address: "Ha Noi",
+        university: "HUST"
+      }
     }
   }
 }
