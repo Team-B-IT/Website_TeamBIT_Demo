@@ -9,8 +9,10 @@
           <li class="list-group-item">Team B'IT</li>
           <li class="list-group-item"><i class="fa fa-phone"></i> {{ profile.phone }} </li>
           <li class="list-group-item"><i class="fa fa-envelope"></i> {{ profile.email }} </li>
-          <li class="list-group-item">GitHub: {{ profile.gitHub }}</li>
-          <li class="list-group-item">Codeforces: {{ profile.codeforces }}</li>
+          <!-- <li class="list-group-item">GitHub: {{ profile.gitHub }}</li>
+          <li class="list-group-item">Linkedin: {{ profile.linkin }}</li>
+          <li class="list-group-item"><i class="fa fa-linkedin"></i></li> -->
+          
         </ul>
         <br>
         <h5>More</h5>
@@ -37,7 +39,22 @@
           </div>
         </div>
         
-        <div class="bs-callout bs-callout-danger">
+        <div class="js-fullheight d-flex justify-content-center">
+          <div class="col-md-8 text text-center">
+            <div class="desc">
+              <h2 class="subheading">Hello I'm</h2>
+              <h1 class="mb-4">Elen Henderson</h1>
+              <p class="mb-4">I am A Blogger Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <ul class="ftco-social mt-3">
+                  <li class="ftco-animate list-inline-item mr-4"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                  <li class="ftco-animate list-inline-item mr-4"><a href="#"><span class="fa fa-github"></span></a></li>
+                  <li class="ftco-animate list-inline-item mr-4"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="bs-callout bs-callout-danger">
           <h4>About me</h4>
           <p></p>
         </div>
@@ -45,7 +62,7 @@
         <div class="bs-callout bs-callout-danger">
           <h4>Summary</h4>
           <p></p>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -65,11 +82,13 @@
           phone: '',
           email: '',
           gitHub: '',
-          codeforces: '',
+          linkedin: '',
           age: 18,
           gender: '',
           address: '',
-          university: ''
+          university: '',
+          linkin: '',
+          description: '',
         }
       }
     }
@@ -78,6 +97,31 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  /* #colorlib-main {
+      top: 0;
+      -moz-transform: translateX(270px);
+      -webkit-transform: translateX(270px);
+      -ms-transform: translateX(270px);
+      -o-transform: translateX(270px);
+      transform: translateX(270px); } */
+
+  .subheading {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px; 
+  }
+
+  .desc {
+    font-size: 20px;
+  }
+
+  .ftco-animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
   .awards {
     padding-left: 30px;
   }
@@ -94,7 +138,7 @@
  }
  .bs-callout {
     padding: 20px;
-    margin: 20px 0;
+    margin: 30px 0;
     border: 1px solid #eee;
     border-left-width: 5px;
     border-radius: 3px;
@@ -104,8 +148,11 @@
   }
   .avatar {
   vertical-align: middle;
-  width: 350px;
-  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   /* text-align: center; */
  }
